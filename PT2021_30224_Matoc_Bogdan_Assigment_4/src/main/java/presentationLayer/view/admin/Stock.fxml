@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0"
+            stylesheets="@../../../../resources/style.css" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="presentationLayer.controller.sceneControllers.admin.StockController">
+    <children>
+        <Pane prefHeight="40.0" prefWidth="850.0" styleClass="menuPane" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="homeButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" text="Home"/>
+                <Button fx:id="StockButton" layoutX="72.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0"
+                        styleClass="currentSceneButton" text="Stock"/>
+                <Button fx:id="updateMenuButton" layoutX="144.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Update Menu"/>
+                <Button fx:id="createMenuButton" layoutX="242.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Create Menu"/>
+                <Button fx:id="createReportsButton" layoutX="340.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Create Reports"/>
+                <TextField fx:id="searchInputTextField" layoutX="450.0" layoutY="5.0" prefHeight="30.0"
+                           prefWidth="300.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0"/>
+                <Button fx:id="searchButton" layoutX="720.0" layoutY="6.0" mnemonicParsing="false" prefHeight="28.0"
+                        prefWidth="30.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="320.0">
+                    <styleClass>
+                        <String fx:value="searchButton"/>
+                        <String fx:value="searchInStockButton"/>
+                    </styleClass>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="logOutButton" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" prefHeight="34.0"
+                prefWidth="65.0" text="Log Out" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0"/>
+
+        <TableView fx:id="table" layoutX="14.0" layoutY="45.0" prefHeight="294.0" prefWidth="577.0"
+                   AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                   AnchorPane.topAnchor="65.0"/>
+        <AnchorPane layoutX="10.0" layoutY="335.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0"
+                    prefWidth="580.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0"
+                    AnchorPane.rightAnchor="10.0">
+            <children>
+                <Button fx:id="deleteButton" alignment="CENTER" layoutX="758.0" layoutY="3.0" mnemonicParsing="false"
+                        prefHeight="34.0" prefWidth="72.0" text="Delete" AnchorPane.rightAnchor="15.0"/>
+                <Button fx:id="addButton" alignment="CENTER" layoutY="3.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="72.0" text="Add new" AnchorPane.rightAnchor="120.0"/>
+                <TextField fx:id="nameTextField" layoutX="10.0" layoutY="8.0" prefHeight="26.0" prefWidth="250.0"
+                           promptText="Product name"/>
+                <TextField fx:id="proteinTextField" layoutX="340.0" layoutY="8.0" prefHeight="25.0" prefWidth="60.0"
+                           promptText="Protein"/>
+                <TextField fx:id="caloriesTextField" layoutX="270.0" layoutY="8.0" prefHeight="25.0" prefWidth="60.0"
+                           promptText="Calories"/>
+                <TextField fx:id="fatTextField" layoutX="410.0" layoutY="8.0" prefHeight="26.0" prefWidth="60.0"
+                           promptText="Fat"/>
+                <TextField fx:id="sodiumTextField" layoutX="480.0" layoutY="8.0" prefHeight="25.0" prefWidth="60.0"
+                           promptText="Sodium"/>
+                <TextField fx:id="priceTextField" layoutX="550.0" layoutY="8.0" prefHeight="25.0" prefWidth="60.0"
+                           promptText="Price"/>
+            </children>
+        </AnchorPane>
+        <Label fx:id="errorLabel" layoutX="21.0" layoutY="48.0" AnchorPane.leftAnchor="20.0"
+               AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="45.0"/>
+    </children>
+</AnchorPane>

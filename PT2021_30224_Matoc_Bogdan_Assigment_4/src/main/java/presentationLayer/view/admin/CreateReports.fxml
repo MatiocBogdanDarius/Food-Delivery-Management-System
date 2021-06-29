@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0"
+            stylesheets="@../../../../resources/style.css" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="presentationLayer.controller.sceneControllers.admin.CreateReportsController">
+    <children>
+        <Pane prefHeight="40.0" prefWidth="600.0" styleClass="menuPane" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="homeButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" text="Home"/>
+                <Button fx:id="StockButton" layoutX="72.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0"
+                        text="Stock"/>
+                <Button fx:id="updateMenuButton" layoutX="144.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Update Menu"/>
+                <Button fx:id="createMenuButton" layoutX="242.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Create Menu"/>
+                <Button fx:id="createReportsButton" layoutX="340.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" styleClass="currentSceneButton" text="Create Reports"/>
+            </children>
+        </Pane>
+        <Button fx:id="logOutButton" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" prefHeight="34.0"
+                prefWidth="65.0" text="Log Out" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0"/>
+
+        <Button fx:id="getOrdersFromIntervalButton" layoutX="535.0" layoutY="261.0" mnemonicParsing="false"
+                prefHeight="80.0" prefWidth="200.0" text="Get Orders From Interval" AnchorPane.rightAnchor="120.0"
+                AnchorPane.topAnchor="260.0"/>
+        <Label layoutX="14.0" layoutY="442.0" prefHeight="30.0" prefWidth="72.0" text="Date "
+               AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="40.0"/>
+        <Button fx:id="getProductTopButton" layoutX="76.0" layoutY="284.0" mnemonicParsing="false" prefHeight="80.0"
+                prefWidth="200.0" text="Get Top Products" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="260.0"/>
+        <Button fx:id="getClientTopButton" layoutX="555.0" layoutY="102.0" mnemonicParsing="false" prefHeight="80.0"
+                prefWidth="200.0" text="Get Top Client" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="100.0"/>
+        <Button fx:id="getDayReportButton" layoutX="84.0" layoutY="102.0" mnemonicParsing="false" prefHeight="80.0"
+                prefWidth="200.0" text="Get Day Report" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="100.0"/>
+        <ComboBox fx:id="startHourComboBox" layoutX="473.0" layoutY="439.0" prefHeight="34.0" prefWidth="75.0"
+                  AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="280.0"/>
+        <ComboBox fx:id="endHourComboBox" layoutX="727.0" layoutY="418.0" prefHeight="34.0" prefWidth="75.0"
+                  AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="430.0"/>
+        <Label alignment="CENTER" layoutX="389.0" layoutY="441.0" prefHeight="30.0" prefWidth="72.0" text="Start Hour"
+               AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="280.0"/>
+        <Label alignment="CENTER" layoutX="646.0" layoutY="442.0" prefHeight="30.0" prefWidth="72.0" text="End Hour"
+               AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="430.0"/>
+        <DatePicker fx:id="datePicker" layoutX="89.0" layoutY="446.0" prefHeight="34.0" AnchorPane.bottomAnchor="25.0"
+                    AnchorPane.leftAnchor="40.0"/>
+        <Label alignment="CENTER" layoutX="656.0" layoutY="452.0" prefHeight="30.0" prefWidth="90.0" text="Number Minim"
+               AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="570.0"/>
+        <Label alignment="CENTER" layoutX="666.0" layoutY="462.0" prefHeight="30.0" prefWidth="90.0" text="Value Minim"
+               AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="710.0"/>
+        <TextField fx:id="noMinTextField" layoutX="570.0" layoutY="445.0" prefHeight="34.0" prefWidth="72.0"
+                   AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="580.0"/>
+        <TextField fx:id="valueMinTextField" layoutX="580.0" layoutY="455.0" prefHeight="34.0" prefWidth="72.0"
+                   AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="720.0"/>
+        <Label fx:id="errorLabel" layoutX="40.0" layoutY="374.0" prefHeight="40.0" textAlignment="CENTER"
+               wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="30.0"
+               AnchorPane.rightAnchor="30.0"/>
+    </children>
+
+</AnchorPane>

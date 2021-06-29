@@ -1,0 +1,69 @@
+*{
+    -primary-color: #a20544;
+    -secondary-color: #b21554;
+    -third-color: #c22564;
+    -fourth-color: #d23574;
+    -fifth-color: #e25584;
+}
+
+
+.menuPane{
+    -fx-background-color: -primary-color;
+}
+
+/* Buttons */
+.button{
+    -fx-background-color: -secondary-color;
+    -fx-border-color: -primary-color;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: -third-color;
+}
+
+.currentSceneButton{
+    -fx-background-color: -fourth-color;
+    -fx-border-color: -secondary-color;
+}
+
+.currentSceneButton:hover{
+    -fx-background-color: -fifth-color;
+}
+
+.searchButton{
+    -fx-background-image: url("searchIcon.png");
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.searchInStockButton{
+    -fx-border-color: none;
+    -fx-background-color: #ddd;
+}
+
+/* Labels */
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#welcomeLabel {
+    -fx-text-fill: -secondary-color;
+    -fx-font-family: "Berlin Sans FB Demi Bold";
+    -fx-font-size: 40;
+}
+
+.claimLabel{
+    -fx-text-fill: -secondary-color;
+    -fx-font-family: "Berlin Sans FB Demi Bold";
+    -fx-font-size: 40;
+}
+.titleFormat1{
+    -fx-text-fill: -secondary-color;
+    -fx-font-family: "Berlin Sans FB Demi Bold";
+    -fx-font-size: 24;
+    -fx-alignment: center;
+}

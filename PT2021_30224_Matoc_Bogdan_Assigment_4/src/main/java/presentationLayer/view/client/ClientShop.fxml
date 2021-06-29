@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0"
+            stylesheets="@../../../../resources/style.css" xmlns="http://javafx.com/javafx/15.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="presentationLayer.controller.sceneControllers.client.ClientShopController">
+    <children>
+        <Pane prefHeight="40.0" prefWidth="600.0" styleClass="menuPane" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="clientShopButton" layoutX="72.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="72.0" styleClass="currentSceneButton" text="Shop"/>
+                <Button fx:id="clientOrdersHistory" layoutX="144.0" mnemonicParsing="false" prefHeight="34.0"
+                        prefWidth="98.0" text="Your Orders"/>
+                <Button fx:id="profileButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0"
+                        text="Profile"/>
+            </children>
+        </Pane>
+        <Button fx:id="logOutButton" layoutX="85.0" layoutY="87.0" mnemonicParsing="false" prefHeight="34.0"
+                prefWidth="65.0" text="Log Out" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0"/>
+
+        <TableView fx:id="menuTable" layoutX="10.0" layoutY="66.0" prefHeight="365.0" prefWidth="362.0"
+                   AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="478.0"
+                   AnchorPane.topAnchor="70.0"/>
+        <TableView fx:id="orderTable" layoutX="536.0" layoutY="66.0" prefHeight="359.0" prefWidth="407.0"
+                   AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="70.0"/>
+        <Button fx:id="placeOrderButton" layoutX="323.0" layoutY="442.0" mnemonicParsing="false" prefHeight="44.0"
+                prefWidth="202.0" text="Place the order" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0"/>
+        <Label fx:id="productsAvailableLabel" layoutX="14.0" layoutY="38.0" prefHeight="30.0" prefWidth="110.0"
+               text="Menu" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0"/>
+        <Label fx:id="newMenuLabel" layoutX="347.0" layoutY="38.0" prefHeight="30.0" prefWidth="72.0" text="Your Order"
+               AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0"/>
+        <Button fx:id="addItemInOrderButton" layoutX="379.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="36.0" text="&gt;&gt;" AnchorPane.topAnchor="175.0"/>
+        <Button fx:id="removeItemInOrderButton" layoutX="379.0" layoutY="235.0" mnemonicParsing="false"
+                prefHeight="30.0" prefWidth="36.0" text="&lt;&lt;" AnchorPane.bottomAnchor="175.0"/>
+        <TextField fx:id="searchInputTextField" layoutX="23.0" layoutY="27.0" prefHeight="30.0" prefWidth="300.0"
+                   AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0"/>
+        <Button fx:id="searchButton" layoutX="389.0" layoutY="162.0" mnemonicParsing="false" prefHeight="0.0"
+                prefWidth="30.0" styleClass="searchButton" AnchorPane.bottomAnchor="17.0"
+                AnchorPane.leftAnchor="320.0"/>
+        <Label layoutX="430.0" layoutY="459.0" prefHeight="30.0" prefWidth="72.0" text="Orders Price:"
+               AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="345.0"/>
+        <Label fx:id="priceLabel" layoutX="500.0" layoutY="469.0" prefHeight="30.0" prefWidth="98.0" text="0 RON"
+               AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="250.0"/>
+        <Label fx:id="errorLabel" layoutX="428.0" layoutY="52.0" prefHeight="17.0" prefWidth="266.0"
+               AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="50.0"/>
+    </children>
+
+</AnchorPane>
